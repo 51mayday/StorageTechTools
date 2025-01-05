@@ -6,4 +6,4 @@ This is a Julia module which assists with generating bit groups for arbitrary it
 
 The column with binary codes may be changed with the flag `binColName::String = columnHeader`. The sheet from which the .xlsx file is read defaults to `Sheet1`, but may be changed with the flag `sheet::String = sheetName`. In verbose mode (`verbose::Bool = true`), the best solution for each number of bit groups will be printed to the user. 
 
-The `write_mappings` function produces .txt files for use with CommandLeo's encoder chest filler functions in their STX Scarpet script. 
+The `write_mappings` function produces .txt files for use with CommandLeo's encoder chest filler functions in their STX Scarpet script. See the examples under the `Sets` directory. 
