@@ -48,7 +48,7 @@ function solve(xlsx::String; sheet::String = "Sheet1", verbose::Bool = false, bi
             
             bitGroups = Vector{Vector{String}}()
             for groupSize in combination
-                push!(bitGroups, [MappingsSolver.getCodes(groupSize)...])
+                push!(bitGroups, [MappingsGenerator.getCodes(groupSize)...])
             end
 
             sets = Vector{Dict{String, Vector{String}}}()
