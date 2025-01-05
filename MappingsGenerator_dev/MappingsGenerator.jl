@@ -1,4 +1,4 @@
-module MappingsSolver
+module MappingsGenerator
 
 using XLSX, DataFrames
 
