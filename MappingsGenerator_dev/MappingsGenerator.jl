@@ -127,13 +127,16 @@ function solve(xlsx::String; sheet::String = "Sheet1", verbose::Bool = false, bi
 end
 
 # Write itemlist files for encoder_chest_filter.sc scarpet script to the /Sets directory
-function write_mappings(sets::Dict{String, Vector{String}})
-    mkpath("Sets")
+function write_mappings(sets::Dict{String, Vector{String}}; outputFolderName::String = "Sets", deleteExistingResults::Bool = true)
+    if deleteExistingResults
+        rm(outputFolderName, force = true, recursive = true)
+    end
+    mkpath(outputFolderName)
     filenames = Vector{String}()
     for key in keys(sets)
         vals = sets[key]
         append!(filenames, ["$key"])
-        open("Sets/$key.txt", "w") do file
+        open("$outputFolderName/$key.txt", "w") do file
             for val in vals
                 println(file, val)
             end
