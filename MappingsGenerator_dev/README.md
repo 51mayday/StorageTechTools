@@ -8,10 +8,10 @@ The `write_mappings` function produces .txt files for use with CommandLeo's enco
 _____________________________________________________________________
 
 Detailed instructions:
-0. Install Julia using [`juliaup`](<https://julialang.org/install/>)
-1. Make a folder and download `MappingsGenerator.jl` and `test_mappings.xlsx` there. Modify `test_mappings.xlsx` to fit your item->code mappings. The only columns you need to care about are `itemtype` and `binary` in `Sheet1`. The other columns and sheets were there for testing purposes. You can do lots of funky stuff like miss some codes, have several item types map to the same code, and have one item type produce two codes. 
-2. Open a terminal in that folder. Run `julia` to start Julia. Install packages `XLSX` and `DataFrames` by running `] add XLSX` and `] add DataFrames`. Wait for the package manager to finish (may take a couple minutes depending on your computer/internet connection). Exit the `pkg` mode by hitting backspace. 
-3. Follow the commands in `test.jl`:
+1. (If not already installed) Install Julia using [`juliaup`](<https://julialang.org/install/>)
+2. Make a folder and download `MappingsGenerator.jl` and `test_mappings.xlsx` there. Modify `test_mappings.xlsx` to fit your item->code mappings. The only columns you need to care about are `itemtype` and `binary` in `Sheet1`. The other columns and sheets were there for testing purposes. You can do lots of funky stuff like miss some codes, have several item types map to the same code, and have one item type produce two codes. 
+3. Open a terminal in that folder. Run `julia` to start Julia. Install packages `XLSX` and `DataFrames` by running `] add XLSX` and `] add DataFrames`. Wait for the package manager to finish (may take a couple minutes depending on your computer/internet connection). Exit the `pkg` mode by hitting backspace. 
+4. Follow the commands in `test.jl`:
 
 `include("MappingsGenerator.jl") # Adds functions from MappingsGenerator.jl to your REPL`
 
