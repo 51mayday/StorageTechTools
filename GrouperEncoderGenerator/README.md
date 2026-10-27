@@ -32,3 +32,11 @@ Detailed instructions:
 `GrouperEncoderGenerator.runGenerator("test_mappings.xlsx", "test_full"; sheet="Sheet1", verbose = true, verboseSubOps = true)`
 
 5. Paste the resulting file `/output/test_full.litematic` into your world. 
+
+_____________________________________________________________________
+
+Updating item list to new versions of Minecraft:
+1. Use my scarpet script get_item_list.sc (to-do add link) to generate the `.json` file.
+ Alternatively, run the following scarpet command in a command block: `item_list=item_list();output_dict={};for(item_list,output_dict:_={'stack_size'->stack_limit(_)};);print(player(),output_dict);output_json=encode_json(output_dict);write_file('items_stackability_'+str(system_info('game_version')),'shared_json',output_dict);`
+2. Move the generated `worldsavename/scripts/shared/items_stackability_XYZ.json` file to the `/assets/` folder.
+3. Update the pointer for the new `items_stackability_XYZ.json` file in `GrouperEncoderGenerator.jl`.
