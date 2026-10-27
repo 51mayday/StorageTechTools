@@ -24,9 +24,9 @@ Detailed instructions:
 `include("GrouperEncoderGenerator.jl") # Adds functions from GrouperEncoderGenerator.jl into your REPL`
 
 `# To just get solved groups:`
-`groups = GrouperEncoderGenerator.solve("mappings_real.xlsx"; sheet = "Sheet1", binColName = "bitstring", itemtypeColName = "itemtype", verbose = true)`
+`groups = GrouperEncoderGenerator.solve("test_mappings.xlsx"; sheet = "Sheet1", binColName = "bitstring", itemtypeColName = "itemtype", verbose = true)`
 
 `# To generate litematic: `
-`GrouperEncoderGenerator.runGenerator("mappings_real.xlsx", "test_full"; sheet="Sheet1", verbose = true, verboseSubOps = true)`
+`GrouperEncoderGenerator.runGenerator("test_mappings.xlsx", "test_full"; sheet="Sheet1", verbose = true, verboseSubOps = true)`
 
 5. Paste the resulting file `/output/test_full.litematic` into your world. 
