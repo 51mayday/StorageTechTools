@@ -16,7 +16,7 @@ const blockerConfig = "minecraft:red_stained_glass_pane"
 
 const wildcardConfig = "minecraft:tropical_fish"
 
-item_stackability_file = "assets/items_stackability_262.json"
+const item_stackability_file = "assets/items_stackability_262.json"
 const item_stackabilities = JSON.parsefile(item_stackability_file)
 
 const ssToColor = Dict(1 => "white_shulker_box", 2 => "light_gray_shulker_box", 3 => "gray_shulker_box", 4 => "black_shulker_box", 5 => "brown_shulker_box", 6 => "red_shulker_box", 7 => "orange_shulker_box", 8 => "yellow_shulker_box", 9 => "lime_shulker_box", 10 => "green_shulker_box", 11 => "cyan_shulker_box", 12 => "light_blue_shulker_box", 13 => "blue_shulker_box", 14 => "purple_shulker_box", 15 => "magenta_shulker_box")
