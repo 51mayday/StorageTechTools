@@ -13,6 +13,8 @@ The column with itemtypes may be changed with the flag `itemtypeColName::String 
 
 The `runGenerator(mappingsXLSX::String, outputName::String; sheet::String = "Sheet1", binColName::String = "bitstring", itemtypeColName::String = "itemtype", verbose::Bool = true, verboseSubOps::Bool = false)` function produces a `.litematic` file in the `/output/` directory. See the example under the `/output/` directory. 
 
+This script was tested with Minecraft 26.2, Julia v1.11, and Litematica litematica-fabric-26.2-0.28.3.jar. 
+
 _____________________________________________________________________
 
 Detailed instructions:
